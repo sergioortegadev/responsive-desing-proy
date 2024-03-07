@@ -1,0 +1,80 @@
+:root {
+  font-size: 16px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --main-color: #34deca;
+  --second-color: #9ceee4;
+  --back-main-color: #0033a0;
+  --gray-main-color: #ccc;
+  --button-color: #ff7b1c;
+  --button-color-hover: #e9701a;
+  --button-color-active: #c45607;
+
+  --main-title-font: "Work Sans", sans-serif;
+
+  --golden: #dfbd69;
+  --golden-gradient: linear-gradient(#dfbd69, #926f34);
+
+  --blue-actions: #0c369c;
+  --blue-actions-trans: #fafbff30;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+.golden-buttons {
+  color: #fff;
+  width: fit-content;
+  padding: 0.25rem 1.5rem;
+  background: var(--golden-gradient);
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.orange-buttons {
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.5rem;
+  background-color: var(--button-color);
+  font-weight: bolder;
+  max-width: fit-content;
+}
+.orange-buttons:hover {
+  background-color: var(--button-color-hover);
+}
+.orange-buttons:active {
+  background-color: var(--button-color-active);
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 6rem;
+}
+@media screen and (min-width: 500px) {
+  .golden-buttons {
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}

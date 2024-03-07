@@ -1,0 +1,142 @@
+.conf {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.conf-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  margin: 2rem 0 10rem 0;
+}
+.conf-title h3 {
+  font-size: 1.6rem;
+}
+.conf-title h3,
+.conf-title h2 {
+  align-self: flex-start;
+  margin: 0;
+}
+.conf-title p {
+  text-align: center;
+}
+.conf-patro img {
+  width: 90vw;
+  height: auto;
+}
+figure {
+  padding-top: 0;
+  margin: 0 0 10rem 0;
+  width: 97vw;
+}
+.figure-border {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid var(--golden);
+  margin: 0 0 3rem 0;
+  padding: 0 1.5rem;
+  background-color: #ffffff;
+  color: #000;
+  box-shadow: 0px 30px 50px #ccc;
+}
+figure img {
+  object-fit: cover;
+  object-position: 50% 0%;
+  margin-top: -5rem;
+  width: 15rem;
+  height: 15rem;
+}
+.figure-right h4 {
+  font-size: 1.2rem;
+  color: var(--back-main-color);
+}
+.figure-right figcaption {
+  font-weight: bold;
+}
+.figure-right h5 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: var(--golden);
+}
+
+@media screen and (min-width: 500px) {
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  figure {
+    margin: 0 4rem;
+    margin-bottom: 2rem;
+    width: 30rem;
+  }
+  .figure-border {
+    display: flex;
+    height: 15rem;
+    flex-direction: row;
+    box-shadow: 0px 30px 50px #cccccc96;
+  }
+  figure img {
+    margin: 0 0 0 -5rem;
+    width: 20rem;
+    height: 10rem;
+  }
+  .conf-title h3 {
+    font-size: 2rem;
+  }
+  .conf-title h2 {
+    font-size: 2.5rem;
+  }
+  .conf-patro img {
+    max-width: 400px;
+  }
+  .conf-first-title {
+    display: flex;
+    flex-direction: column;
+  }
+  .figure-right {
+    margin: 1rem;
+  }
+  .figure-right h4 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .cards {
+    margin-top: 5rem;
+  }
+  .conf-title {
+    flex-direction: row;
+    width: 80vw;
+    margin: 0 auto;
+  }
+  .conf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  h3 {
+    color: var(--gray-main-color);
+  }
+  h2 {
+    color: #1f61ee;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  h3 {
+    color: #5e6787;
+  }
+  h2 {
+    color: var(--back-main-color);
+  }
+}
